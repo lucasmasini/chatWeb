@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Chat</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+    <div>
+        <h1>Mi App Chat</h1>
+        <hr>
+        <hr>
+
+        <div id="messages"></div>
+
+        <form class='form-inline' onsubmit="return addMessage(this)" autocomplete="off">
+            <input type="text" id="userName" placeholder="Tu nombre">
+            <input type="text" id="texto" placeholder="Escribe tu mensaje...">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
